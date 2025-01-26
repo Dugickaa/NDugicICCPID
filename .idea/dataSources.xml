@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="reservations@localhost" uuid="28536ad8-a271-4de5-a193-b4acf7e68355">
+    <data-source source="LOCAL" name="reservations@localhost" uuid="16e3eaa4-5af1-4baa-9ed6-e9a57ff2b008">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
+      <remarks>C:\Users\nermi\OneDrive\Bureau\PIDICCTest\NDugicICCPID\src\main\resources\application.properties</remarks>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://localhost:3306/reservations</jdbc-url>
       <jdbc-additional-properties>
