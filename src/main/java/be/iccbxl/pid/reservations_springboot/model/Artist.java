@@ -35,7 +35,7 @@ public class Artist {
 
 
 
-    protected Artist() {}
+    public Artist() {}
 
 
 
