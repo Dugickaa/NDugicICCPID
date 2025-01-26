@@ -21,6 +21,22 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 
 
+=======
+
+import org.springframework.stereotype.Controller;
+
+import org.springframework.ui.Model;
+
+import org.springframework.web.bind.annotation.GetMapping;
+
+import org.springframework.web.bind.annotation.PathVariable;
+
+
+
+import be.iccbxl.pid.reservations_springboot.model.Artist;
+
+import be.iccbxl.pid.reservations_springboot.service.ArtistService;
+>>>>>>> origin/master
 
 
 
@@ -72,6 +88,7 @@ public class ArtistController {
 
     }
 
+ HEAD
     @GetMapping("/artists/{id}/edit")
     public String edit(Model model, @PathVariable("id") long id, HttpServletRequest request) {
         Artist artist = service.getArtist(id);
@@ -108,6 +125,8 @@ public class ArtistController {
 
         return "redirect:/artists/"+artist.getId();
     }
+=======
+>>>>>>> origin/master
 
 
 }
