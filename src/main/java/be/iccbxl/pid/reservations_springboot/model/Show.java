@@ -1,15 +1,10 @@
 package be.iccbxl.pid.reservations_springboot.model;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
-import jakarta.persistence.Column;
+import jakarta.persistence.*;
 
 import com.github.slugify.Slugify;
 
@@ -50,6 +45,10 @@ public class Show {
      */
     @Column(name="updated_at")
     private LocalDateTime updatedAt;
+
+    @OneToMany(targetEntity=Representation.class, mappedBy="show")
+    private List<Representation> representations = new ArrayList<>();
+
 
     public Show() { }
 
