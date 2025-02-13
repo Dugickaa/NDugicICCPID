@@ -108,5 +108,11 @@ public class Location {
                 + ", address=" + address	+ ", locality=" + locality + ", website="
                 + website + ", phone=" + phone + "]";
     }
+
+    public void removeShow(Show show) {
+    }
+
+    public void addShow(Show show) {
+    }
 }
 
